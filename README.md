@@ -8,11 +8,10 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-<div>XD</div>
 <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <script>
-document.getElementById("player").innerHTML = "Text added by JavaScript code";
+document.getElementById("player").src = "https://www.youtube.com/watch?v=SjtlDq-u8FY";
 </script>
 
 ```markdown
