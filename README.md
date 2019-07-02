@@ -8,6 +8,8 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
+<button onclick="shuffle()" id="randomize" type="button">Shuffle Playlist</button>
+
 <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -15,6 +17,12 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 <script>
     var player = document.getElementById("player");
     player.src = "https://www.youtube.com/embed/SjtlDq-u8FY";
+    
+
+
+    shuffle(){
+        player.src = "https://www.youtube.com/embed/_uSgybW-y5s"
+    }
 </script>
 
 ```markdown
