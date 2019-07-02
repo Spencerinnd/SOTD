@@ -13,18 +13,8 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
 <script>
-    $(document).ready(function() {
-        $("#status").html("<p>Loading page content...</p>");
-        // Load the Markdown file and convert it to HTML for display
-        var markdownURL = "mycontent.markdown";
-        $.get(markdownURL, function(markdownContent) {
-            var converter = new Markdown.Converter();
-            var htmlContent = converter.makeHtml(markdownContent);
-            $("div#content").html(htmlContent);
-        });
-    });
-
-    document.getElementById("player").src = "https://www.youtube.com/embed/SjtlDq-u8FY";
+    var player = document.getElementById("player");
+    player.src = "https://www.youtube.com/embed/SjtlDq-u8FY";
 </script>
 
 ```markdown
