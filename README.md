@@ -10,8 +10,21 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 
 <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
 <script>
-document.getElementById("player").src = "https://www.youtube.com/embed/SjtlDq-u8FY";
+    $(document).ready(function() {
+        $("#status").html("<p>Loading page content...</p>");
+        // Load the Markdown file and convert it to HTML for display
+        var markdownURL = "mycontent.markdown";
+        $.get(markdownURL, function(markdownContent) {
+            var converter = new Markdown.Converter();
+            var htmlContent = converter.makeHtml(markdownContent);
+            $("div#content").html(htmlContent);
+        });
+    });
+
+    document.getElementById("player").src = "https://www.youtube.com/embed/SjtlDq-u8FY";
 </script>
 
 ```markdown
