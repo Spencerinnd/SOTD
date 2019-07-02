@@ -23,7 +23,8 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
     function shuffle(){
         alert("xd");
         player.src = "https://www.youtube.com/embed/_uSgybW-y5s";
-        alert("xd2");
+        player.frameborder="0"; 
+        player.allow="accelerometer; autoplay; encrypted-media; gyroscope picture-in-picture";
     }
 </script>
 
