@@ -20,7 +20,7 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
     
 
 
-    shuffle(){
+    function shuffle(){
         alert("xd");
         player.src = "https://www.youtube.com/embed/_uSgybW-y5s";
         alert("xd2");
